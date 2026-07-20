@@ -1,0 +1,30 @@
+---
+import Head from '../components/head.astro'
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <Head />
+    </head>
+    <body>
+        <slot />
+    </body>
+    <script src="../js/oneko.js"/>
+</html>
+
+<style>
+    @font-face {
+        font-family: "Nunito";
+        src: url(/Nunito.ttf);
+    }
+
+    body {
+        font-family: "Nunito", sans-serif;
+        background-color: #232136;
+        color: #e0def4;
+        max-width: 750px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+</style>

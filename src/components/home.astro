@@ -1,0 +1,65 @@
+---
+import Navbar from "../components/navbar.astro";
+import Card from "./card.astro";
+---
+
+<Navbar/>
+<main>
+    <h1>hi! i'm <span class="graident">Omar</span></h1>
+    <p>i'm a developer from egypt who learns kotlin, aswell as some bits of html and css, i'm really interested into
+        programming lol</p>
+    <p>i also contribute to android-related repositories and also make android apps, such as:</p>
+
+    <div class="cards">
+        <Card>
+            <h3>Lumi</h3>
+            <span>The cutest cat client for Minky :3</span>
+            <a class="view-button" href="https://github.com/omardotdev/lumi">View repository</a>
+        </Card>
+
+        <Card>
+            <h3>Aliucord</h3>
+            <span>A mod for the Discord Android App</span>
+            <a class="view-button" href="https://github.com/aliucord/aliucord">View repository</a>
+        </Card>
+    </div>
+
+    <p>i don't really have much contacts, but you can find me on <a
+            href="https://discord.com/users/1135918173959491595">Discord</a>, <a
+            href="https://sh.itjust.works/u/omardotdev">Lemmy</a> or <a href="https://github.com/omardotdev">Github</a>
+    </p>
+</main>
+
+<style>
+    .graident {
+        background: linear-gradient(120deg, rgba(42, 39, 63, 1) 0%, rgba(196, 167, 231, 1) 100%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    a {
+        color: #c4a7e7;
+    }
+
+    .cards {
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    span {
+        color: #908caa;
+    }
+
+    .view-button {
+        display: inline-block;
+        background-color: #c4a7e7;
+        color: #2a273f;
+        padding: 8px;
+        width: 305px;
+        height: 24px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 10px;
+        margin-top: 24px;
+    }
+</style>
